@@ -11,12 +11,12 @@ public class DayBef {
 	public static void main(String[] args) {
 		 Scanner in = new Scanner(System.in);
 		LocalDate localDate = LocalDate.now();
-		System.out.println("************* Введите дату рождения *************************");
-		System.out.println("Год: ");
+		System.out.println("************* Input Birthday date *************************");
+		System.out.println("Year: ");
         int bYear = in.nextInt();
-        System.out.println("Месяц: ");
+        System.out.println("Month: ");
         int bMon = in.nextInt();
-        System.out.print("День: ");
+        System.out.print("Day: ");
         int bDay = in.nextInt();
         in.close();
         
@@ -39,7 +39,7 @@ public class DayBef {
         dat2=Date.from(localDate.atStartOfDay().atZone(ZoneId.systemDefault()).toInstant());
         
         
-        System.out.println("************* Количество дней до дня рождения ***************");
+        System.out.println("************* Num ******************************");
         System.out.println( (dat1.getTime()-dat2.getTime())/(24*60*60*1000)  );
 	}
 	
